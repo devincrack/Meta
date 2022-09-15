@@ -1,0 +1,223 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login &bull; Metagram</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="wrapper">
+
+    <main>
+        <form action="" method="post">
+        {% csrf_token %}
+        <div>
+              <img src="{% static 'IMG/metagram.png' %}" alt=""></img>
+              </div>
+            <div id="box">
+
+                <div id="fb">
+                    <button class="higt wd">
+                        <img src="{% static 'IMG/images.png' %}" alt=""></img>Continue with Facebook
+                    </button>
+                </div>
+
+                <div id="or">
+                    <div class="line">
+
+                    </div>
+                    <p>OR</p>
+                    <div class="line">
+
+                </div>
+            </div>
+              <div id = "message">
+                  {% for mes in messages %}
+                    {{mes}}
+                  {% endfor %}
+              </div>
+                <div>
+                    <div id="user"class="inpt higt wd">
+                        <input class="higt" type="text" name="username" placeholder="Phone number, username, or email" required >
+                    </div>
+                    <div id="pasd"class="inpt higt wd">
+                        <input class="higt" type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div id="forgt">
+                        <a href="#">Forgotten password?</a>
+                    </div>
+                    <div id="login" class="higt wd">
+                        <input type="submit" value="Log In">
+                    </div>
+                    <div id="signup">
+                        Don't have an account?
+                        <a href="{% url 'signup_phone' %}"><b>SignUp</b></a>
+                    </div>
+                    <div id="hrz"></div>
+                    <div id="insta">
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div id="foot">
+            <div id="hrs"></div>
+        </div>
+        <div id="from">
+             From
+        </div>
+        <div id="im">
+            <img src="{% static 'IMG/font_rend.png' %}" alt=""></img>
+        </div>
+    </footer>
+    </div>
+
+
+
+    <style>
+        *:focus {
+             outline: none;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-size: 36px;
+            font-family:sans-serif;
+        }
+
+        #wrapper{
+            height: 43.5em;
+            padding: 5em 0;
+            text-align: center;
+        }
+        #box{
+            box-sizing: border-box;
+            width: 90%;
+            height: 37em;
+            text-align: center;
+            margin: auto;
+        }
+        #fb{
+            box-sizing: border-box;
+            width: auto;
+            margin: 2em auto;
+        }
+        #fb button{
+            background-color:#15a1ff;
+            border-width: 0;
+            color: white;
+            text-align: right;
+            padding-right: 3.7em;
+        }
+
+        .wd{
+            width: 85%;
+        }
+        .higt{
+            height: 2.5em;
+            border-radius: 0.3em;
+        }
+
+        .inpt{
+            border: 0.1em solid lightgray;
+            width:85%;
+        }
+        input{
+            box-sizing: border-box;
+            width: 84%;
+            border-width:0;
+        }
+
+        #or{
+            display: flex;
+            height: 1em;
+            margin: 1em;
+            align-items: center;
+        }
+        .line{
+            width: 40%;
+            margin:auto;
+            height: 0.1em;
+            background-color: gray;
+        }
+        p{
+            margin-left:0.2em;
+            margin-right:0.2em;
+        }
+        #pasd{
+            margin:1em auto;
+            margin-bottom: 1.5em;
+        }
+        #user{
+            margin:0.5em auto;
+            margin-top: 0.2rem;
+        }
+        #forgt{
+            text-align: right;
+            margin-right: 1.8em;
+        }
+        #forgt a{
+            text-decoration: none;
+            color: #129edd;
+        }
+        #login{
+            text-align: center;
+            margin: auto;
+            margin-top: 1.5em;
+        }
+        #login input{
+            box-sizing: border-box;
+            width: 100% ;
+            background-color:#15a1ff;
+            color:white;
+            border-width: 0;
+            height: 2.5em;
+            border-radius: 0.3em;
+        }
+        #signup{
+            margin: 2em auto;
+            text-decoration: none;
+        }
+        #signup a{
+            text-decoration: none;
+            color: #129edd;
+        }
+        #im img{
+            height: 1.5em;
+        }
+        #hrs{
+            display: block;
+            background-color: lightgrey;
+            height: 0.1em;
+            margin-bottom: 1em;
+        }
+        .wd img{
+            height: 1.2em;
+            align-items: center;
+            margin-right: 0.3em;
+        }
+        #message{
+        box-sizing:border-box;
+        font-size:30px;
+        margin:auto;
+        color:red;
+        width:90%;
+        }
+        input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+	   -webkit-transition-delay: 9999s;
+	   transition-delay: 9999s;
+	}
+    </style>
+</body>
+</html>

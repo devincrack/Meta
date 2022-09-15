@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <!--<link rel="stylesheet" href=".css">-->
+    <style>
+                *:focus{
+            outline: none;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sens-serif;
+            font-size:35px;
+        }
+        .hrs{
+            margin: 1em auto;
+        }
+        #reg{
+            text-align: center;
+        }
+        #btn{
+            text-align: center;
+            margin: 3em auto;
+            
+        }
+        #btn button{
+            margin: 1em 2em;
+            width: 20%;
+            height: 4em;
+            border: 0em ;
+            background-color: white;
+        }
+        .chr{
+            width: 40%;
+            height: 0.2em;
+            display: inline-block;  
+        }
+        #chr1{
+            background-color: gray;
+        }
+        #chr2{
+            background-color: black;
+        }
+        #inpt_fld{
+            border: 0.1em solid lightgray;
+            height: 2.5em;
+            width: 80%;
+            margin: auto;
+            align-items: center;
+            border-radius: 0.3em;
+        }
+        
+        #inpt_fld input{
+            border: 0;
+            height: 2.5em;
+            border-radius: 0.5em;
+            width: 80%;
+            margin-left: 1em;
+           
+        }
+        
+        
+        #btn_nxt{
+            margin: 3em auto;
+            box-sizing: border-box;
+            width: 80%;
+        }
+        #next{
+            width: 100%;
+            border:0;
+            background-color:#22b4ea;
+            height: 2.5em;
+            margin: auto;
+            border-radius: 0.3em;
+            color: white;
+        }
+        a{
+            text-decoration:none;
+            color:black;
+            
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            -webkit-transition-delay: 9999s;
+            transition-delay: 9999s;
+        }
+    </style>
+    <header>
+        <div class="hrs">
+            <hr>
+        </div>
+        <div id="reg">
+            <h1>Register</h1>
+        </div>
+        <div class="hrs">
+            <hr>
+        </div>
+    </header>
+    <main> {% block body  %}
+        <form  action = "signup_email" method="post" >
+		{% csrf_token %}
+            <div id="btn">
+                <button id="b1"><a href="phone">Phone</a></button>
+                <button id="b2">Email</button>
+                <div class="chr" id="chr1"></div>
+                <div class="chr" id="chr2"></div>
+            </div>
+            <div id="page">
+                <div id="inpt_fld">
+                    
+                        <input  id="inputt" type="email" name="email" placeholder="  Email" required >
+
+            </div>
+          </div>
+            <div id="btn_nxt">
+                <input type="submit" id="next" value="Next">
+            </div>
+        </form>
+           {% endblock body  %}
+    </main>
+</body>
+</html>

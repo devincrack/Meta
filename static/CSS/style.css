@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+    font-family:sans-serif;
+}
+
+*:focus{
+    outline: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.text-center{
+    justify-content: center;
+    text-align: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.b {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    will-change: 70%;
+    background: yellow;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.a {
+    margin: 0 20px;
+    background: blue;
+    height: 5vh;
+    width: 20%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    height: 7vh;
+    width: 100%;
+    background: white;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+.hrs{
+    height: 0.1vh;
+    background: #cbcbd1;
+}
+
+.hrs2{
+    height: 0.1vh;
+    background: #cbcbd1;
+    margin-top: 0.1vh;
+}
+
+main{
+    height: 86vh;
+    background: white;
+    overflow-y: scroll;
+}
+
+#cam{
+    height: 4vh;    
+}
+
+#meta{
+    height: 6vh;
+    padding-top: 1vh;
+}
+
+#chat{
+    height: 4vh;
+}
+
+.heart-img{
+    height: 3vh;
+}
+
+.home-img{
+    height: 3vh;
+}
+
+.foot-profile-pic{
+    border-radius: 100%;
+    height: 3.5vh;
+}
+
+.story-container{
+    background: #f0f0f2;
+    height: 15vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: ;
+    padding: 0 5vw;
+    overflow-x: auto;
+    font-size: 2vh;
+}
+
+.profile-story-image .profile{
+    border-radius: 100%;
+    position: relative;
+    height: 10vh;
+}
+
+.username{
+    display: flex;
+    width: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    margin-top: -3vh;
+}
+
+.oth-story-images img{
+    border-radius: 100%;
+    position: relative;
+    height: 10vh;
+    margin: 0 2vw;
+}
+
+.profile-story-image , .oth-story-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.u-text{
+    display: flex;
+    justify-content: space-around;
+}
+
+.plus{
+    position: relative;
+    height:2.5vh;
+    top: -4vh;
+    left: 14vw;
+    border-radius: 100%;
+}
+
+.new-post{
+    height: 3vh;
+}
+
+.search-img{
+    height: 3vh;
+}
+
+.foot{
+    background: white;
+    height: 7vh;
+    width: 100vw;
+    font-weight: bold;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    border: 3% solid #cbcbd1;
+}
+
+.in-post{
+    height: 6vh;
+}
+
+.post-owner-profile{
+    text-align: center;
+    display: flex;
+    grid-row: 1/span 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-container{
+    width: auto;
+    align-items: center;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 20vw 30vw 40vw;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.options{
+    text-align: right;
+    padding: 0 4vw;
+}
+
+.ellipsis{
+    height: 1vh;
+    margin-top: 2vh;
+}
+
+.display-post{
+    width: 100vw;
+}
+
+#preloader{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: white url("preloader.gif") no-repeat center center;
+    background-size: 50%;
+    position: fixed;
+    z-index: 999999;
+}
+
+.same{
+    height: 3vh;
+}
+
+.post-share{
+    height: 3vh;
+}
+
+.post-footer{
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 70vw;
+    justify-content: space-between;
+    margin: 2vh 0;
+}
+
+.post-footer div{
+    text-align: right;
+}
+
+.post-footer .collection{
+    text-align: right;
+    padding-right: 3vw;
+}
+
+.post-values div{
+    padding-left: 2vw;
+}
+
+.likes-counted{
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+.post-values captions{
+    margin: 1vh 0;
+}
+
+.views-comments-if-avail{
+    margin-top: 1vh;
+    color: #989a9c;
+    margin-bottom: 1vh;
+}
+
+.font-same{
+    height: 2.5vh;
+}
+
+.foot{
+    border: 0.1vh solid #cbcdd1;
+}

@@ -1,0 +1,43 @@
+from django.shortcuts import render,redirect
+from .models import Profile,Profile_pic
+from django.contrib import messages
+import time
+# Create your views here.
+
+def home(request):
+    return render(request,"index.html")
+
+def index(request):
+    if request.session.get("status") == "logged in":
+        img = Profile_pic.objects.all()
+        return render(request,"index.html",{"img":img})
+    return redirect("accounts/login")
+
+
+def login(request):
+    if request.method=="POST":
+        username = request.POST["username"]
+        password = request.POST["password"]
+        if Profile.objects.filter(username=username,password=password).exists() | Profile.objects.filter(email=username,password=password).exists(): #| Profile.objects.filter(phone=username,password=password).exists()
+            time.sleep(3)
+            print("Logged In successfully")
+            response = render(request,"index.html")
+            request.session["status"]="logged in"
+            request.session.set_expiry(5184000)
+            return response
+        else:
+            mymessage = "The username or password you entered is Incorrect !"
+            messages.info(request,mymessage)
+            return redirect("login")
+    elif request.session.get("status") == "logged in":
+        print("already")
+,        return render(request,"index.html")
+    return render(request,"MLogin.html")
+
+
+def logout(request):
+    response = redirect("accounts/login")
+    request.session.flush()
+    request.session.clear_expired()
+    print("session deleted")
+    return response

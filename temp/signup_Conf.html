@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <div>
+     <form action="verify_Otp" method="post" >
+        {% csrf_token %}
+        <div id="change">
+           <div> <h3>
+                Enter Confirmation Code
+            </h3>
+            </div>
+            <div>
+                <p>Enter the code we sent to <b>{{email}}</b>. <a href="email"><b>Change Number/Email</b></a> or
+               <a href="email"> <b>Resend SMS</b></a></p>
+            </div>
+            <div id="bbox">
+            <div id="message" >
+              {% for message in messages %}
+              {{ message }}
+              {% endfor %}
+            </div>
+            <div id = "inpcode">
+                <input id="gh_k" type="number" class="same" name="conf_code" placeholder="Confirmation Code" required >
+            </div>
+            <input id="sub" type="submit" class="same" value="Next">
+            </div>
+        </div>
+     </form>
+    </div>
+    <style>
+        *:focus{
+            outline:none;
+         }
+        *{
+            margin: 2px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 35px;
+            background-color: white;
+            text-decoration: none;
+        }
+        #change{
+            margin: 50px auto;
+            text-align: center;
+            padding: 100px;
+        }
+        h3{
+            margin: 60px auto;
+            
+        }
+        
+        #inpcode{
+            box-sizing: border-box;
+            margin: 80px auto;
+            margin-top:1em;
+            width: 100%;
+            border: 2px solid gray;
+            border-radius: 9px;
+            background-color: white;
+        }
+        .same{
+            width: 99%;
+            height: 2.5em;
+            border-radius: 9px;
+            border-width: 0px;
+        }
+        button{
+            background-color: #2babff;
+				     color: white;
+        }
+        #gh_k{
+            padding-left: 1em;
+        }
+        #sub{
+            background-color:#15a1ff;
+            color:white;
+            border-width: 0;
+            height: 2.5em;
+            border-radius: 0.3em;
+        }
+        a{
+            color: #2babff;
+        }
+        #message{
+        margin:auto;
+        margin-top:1em;
+        color:red;
+        width:90%;
+        font-size:30px;
+        }
+        input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+	   -webkit-transition-delay: 9999s;
+	   transition-delay: 9999s;
+	}
+    </style>
+</body>
+</html>
