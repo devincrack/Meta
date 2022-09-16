@@ -1,0 +1,113 @@
+
+html{
+    font-family: sans-serif;
+}
+
+*{
+				font-size: 35px;
+				
+}
+#flx{
+				display: flex;
+				align-items: flex-start;
+				width: 100%;
+				height: 1500px;
+				justify-content: center;
+				scroll-behavior: smooth;
+			  
+}
+div{
+			
+				display: block;
+				align-items: center;
+				text-align: center;
+}
+
+#cont{
+				display: inline-block;
+				box-sizing: border-box;
+				width: 75%;
+				margin: auto;
+				height: 810px;
+				margin-top: 100px;
+}
+input{
+				height: 90px;
+				border-radius: 4px;	
+				margin: 8px 0px;
+				box-sizing: border-box;
+				width: 100%;
+}
+
+#btn{
+				box-sizing: border-box;
+				height: 90px;
+				width: 100%;
+				border-radius: 7px;
+				border-width: 0px;
+				color: white;
+				
+}
+
+
+}
+
+#logo{
+				width: 100%;
+				display: inline
+				margin-top: 200px;
+}
+
+#logo img{
+				height: 140px;
+				margin-top: 230px;
+}
+#forgt{
+       
+				padding:30px 0px;
+				text-align: right;
+}
+footer {
+				padding: 100px 0px;
+}
+#or img{
+				width: 100%;
+				
+}
+
+.bg-blue{
+				background-color: #1577ff
+}
+.space input{
+				border-color: gray;
+				border-width: 2px 2px 2px 2px;
+				background-color: whitesmoke;
+				padding-left: 10px;
+				border-radius: 7px;
+}
+.lblue input{
+				background-color: lightskyblue;
+				border-width: 0px;
+				color: white;
+}
+#forgt a{
+				color: #129edd;
+}
+footer a{
+				color:gray;
+				
+}
+b{
+				color:#2babff
+}			
+a{
+				text-decoration: none;
+				
+}
+footer a b{
+                text-decoration: none;
+}
+
+#btn img{
+				width: 40px;				
+}

@@ -1,0 +1,198 @@
+*{
+				font-size: 35px;
+				margin: 0px;
+				padding: 0px;
+				
+}
+#fbox{
+				display: flex;
+				text-align: center;
+			  align-content: center;
+			  flex-direction: column;
+			  height: 2000px;
+}
+#flx{
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				align-items: center;
+				width: 100%;
+				
+}
+
+h1{
+				font-size: 45px;
+				padding-bottom: 10px;
+}
+
+#lft{
+				float: left;
+				font-size: 45px;
+				padding-left: 230px;
+}
+#rgt{
+				float: right;
+				font-size: 45px;
+				padding-right: 230px;
+}
+#container{
+				display: block;
+				padding: 150px 0px;
+}
+input{
+				margin-top: 60px;
+				height: 60px;
+}
+#box{
+				box-sizing: border-box;
+				margin: 30px auto;
+				width: 80%;		
+}
+p{
+				margin: 40px auto;
+}
+#lblue input{
+				background-color: #2babff;
+				border-width: 0px;
+				color: white;
+				width: 100%;
+				border-radius: 5px;
+				margin: 20px auto;
+}
+
+*{
+				color:;
+}
+#phone{
+				box-sizing: border-box;
+				width: 100%;	
+				padding-left: 250px;
+				background-color: whitesmoke;
+				flex-grow: 2px ;
+}
+.abc{
+				height: 3rem;
+				border-radius: 4px;			
+}
+
+#sms{
+				padding: 0 0 30px 0;
+				margin-top: 15px;
+				color: grey;
+}
+#pe{
+				padding: 50px 0;
+				text-align: center;
+				box-sizing: border-box;
+				width: 70%;
+				margin: auto;
+}
+#pe button{
+				width: 40%;
+				padding: 25px 0;
+				border: 0px;				
+				font-size: 50px;
+				background-color: white;
+}
+
+
+#slide{
+				display: flex;
+				padding: 0 10px;
+				text-align: center;
+				
+}
+
+#hr1{
+       box-sizing: border-box;
+				width: 100%;
+				color: black;
+}
+#hr2{
+				box-sizing: border-box;
+				width: 100%;
+				color: gray;
+}
+
+.divhr{
+       box-sizing: border-box;
+				width: 100%;
+}
+
+.divhr hr{
+				height: 1px;
+				background-color: lightgray;
+				margin: 20px auto;
+}
+.xyz{
+      border:2px solid gray; 
+      height:3rem;
+      background-color:lightgray; 
+      border-radius:8px;   
+      margin-bottom: 6em;
+}
+select{
+      box-sizing:border-box; 
+      width:20%;
+      height:3rem; 
+      border-width:0px; 
+      margin-top:0px;
+      background-color:lightgray;
+      color:#2babff;
+}
+#inputt{
+      box-sizing:border-box; 
+      width:70%;
+      height:3rem; 
+      border-width:0px;
+      margin-top:0px;
+      background-color:lightgray;
+}
+
+#lblue{
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+    
+}
+
+#slect{
+    justify-content: center;
+}
+
+#fb{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    background-color: #1577ff;
+    position: fixed;
+    bottom: 1px;
+    height: 125px;
+    color: white;
+    text-align: center;
+
+}
+
+#fb p{
+    border: 5px solid red;
+    padding: 0px 10px;
+    padding-bottom: 20px;
+}
+
+#fb img{
+    width: 40px;
+    border: 2px solid red;
+    padding: 0px 10px;
+    margin-right: 20px;
+}
+
+#em{
+      box-sizing:border-box; 
+      width:70%;
+      height:3rem; 
+      border-width:0px;
+      margin-top:0px;
+      background-color:lightgray;
+      
+}
