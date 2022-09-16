@@ -56,7 +56,7 @@ def signup_Continue_Username(request):
             messages.info(request,"Sorry! Username is not Available")
             return redirect("signup_username")
         user = User.objects.create_user(username=usernames,password=request.session["password"],first_name=request.session["Name"],email=request.session["email"])
-        uset.save()
+        user.save()
         time.sleep(1)
         return HttpResponse("<h1>You are successfully pre-registered for Metagram.<br>This Website is under development. <br> When its ready, we will mail you.<br>Login with your id.</h1>")
     return render(request,"signup_Username.html")
@@ -76,7 +76,7 @@ def signup_Continue_Name(request):
     if request.method == "POST":
         name = request.POST["Name"]
         password = request.POST["password"]
-        if len(password)<6 or password.isalnum() is False:
+        if len(password)<6:
             messages.info(request,"Please enter 8 digit password to make your account strong!")
             return redirect("signup_Name")
         request.session["Name"] = name
