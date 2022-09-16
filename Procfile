@@ -1,1 +1,1 @@
-web:gunicorn Meta.wsgi
+web: gunicorn Meta.wsgi
