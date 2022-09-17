@@ -23,7 +23,7 @@ APPEND_SLASH = False
 SECRET_KEY = 'django-insecure-q=!dpjqmmcd*jxigbjdxkt#ve*@vncw*&d2j^z%*5e@d96z)8u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["metagram-z.herokuapp.com"]
 
