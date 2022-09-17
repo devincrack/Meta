@@ -58,7 +58,7 @@ def signup_Continue_Username(request):
         user = User.objects.create_user(username=usernames,password=request.session["password"],first_name=request.session["Name"],email=request.session["email"])
         user.save()
         time.sleep(1)
-        return HttpResponse("<h1>You are successfully pre-registered for Metagram.<br>This Website is under development. <br> When its ready, we will mail you.<br>Login with your id.</h1>")
+        return render("signup_To_Login.html")
     return render(request,"signup_Username.html")
 
 def signup_Continue_Birth(request):
