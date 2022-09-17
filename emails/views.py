@@ -58,7 +58,7 @@ def signup_Continue_Username(request):
         user = User.objects.create_user(username=usernames,password=request.session["password"],first_name=request.session["Name"],email=request.session["email"])
         user.save()
         time.sleep(1)
-        return render("signup_To_Login.html")
+        return render(request,"signup_To_Login.html")
     return render(request,"signup_Username.html")
 
 def signup_Continue_Birth(request):
