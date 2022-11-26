@@ -98,7 +98,6 @@ def verify_Otp(request):
         if userOtp == meOtp:
             if request.COOKIES.get("email") is not None:
                 return render(request,"signup_Name.html")
- #              mymsg = "Invalid Otp!"
             elif request.session.get("email") is None:
                 messages.info(request,"sorry! otp expired!")
                 return redirect("signup_Conf")
@@ -125,6 +124,7 @@ def signup_email(request):
         response.set_cookie("email",uemail,max_age=600)
         return response
     return render(request,"M_e_Signup.html")
+
 
 
 
