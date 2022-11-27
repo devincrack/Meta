@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<style>
+    .slider{
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    figure{
+        position: relative;
+        width: 600%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+    img{
+        height: 10rem;
+        float: left;
+        margin: 0 100%;
+    }
+</style>
+<body>
+    <div class="slider">
+        <figure>
+            <img src="/static/IMG/post.jpg" alt=""></img>
+            <img src="/static/IMG/profile.jpg" alt=""></img>
+            <img src="/static/IMG/post.jpg" alt=""></img>
+            <img src="/static/IMG/profile.jpg" alt=""></img>
+            <img src="/static/IMG/post.jpg" alt=""></img>
+            <img src="/static/IMG/profile.jpg" alt=""></img>
+        </figure>
+    </div>
+</body>
+</html>

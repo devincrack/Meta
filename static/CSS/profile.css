@@ -1,0 +1,167 @@
+*{
+    font-size: 1.7rem;
+}
+
+body{
+    background: white;
+    background-color: #ecf0f3;
+}
+
+.hr{
+    width: 100%;
+    height: 0.1rem;
+    background: #d3d7de;
+}
+
+header{
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.profile-head{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    margin: 0.7rem;
+}
+
+.profile-head img{
+    height: 2.5rem;
+}
+
+.username{
+    height: 2rem;
+}
+
+.t-center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.profile img{
+    border-radius: 50%;
+    height: 8rem;
+    margin: 1rem 0 0 1rem;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box .profile{
+    grid-row: 1/span 2;
+}
+
+.edit-profile{
+    margin: auto;
+    width: 15rem;
+    margin-right: 6rem;
+    background-color: #ecf0f3;
+    border-radius: 1.5em;
+    box-shadow: inset 0.7em 0.7em 0.9em #cbced1,inset -0.4em -0.3em 0.4em #fff;
+}
+.username-main,.edit-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 20rem;
+}
+
+.edit-profile button{
+    border: none;
+    background: transparent;
+}
+
+.edit button{
+    background: transparent;
+    border: none;
+}
+
+.edit{
+     border: 2px solid #d3d7de;
+     text-align: center;
+     margin: 5rem 0;
+     height: 3rem;
+     padding-top: 0.6em;
+     border-radius: 1rem;
+     margin-right: 1em;
+ }
+ 
+.bio{
+     background-color: #ecf0f3;
+     border-radius: 1em;
+     box-shadow: 0.7em 0.7em 0.9em #cbced1, -0.4em -0.3em 0.4em #fff;
+     max-width: 80vw;
+     margin: auto;
+     margin-top: 1.5rem;
+     padding: 1rem 0 1rem 1rem;
+ }
+ 
+.favourites-stories{
+     display: flex;
+     flex-direction: row;
+     overflow-x: scroll;
+     margin-top: 2.5rem;
+     text-align: center;
+     margin-bottom: 2rem;
+ }
+
+.favourites-stories div{
+    margin-top: -0.8rem;
+}
+ .favourites-stories img{
+    border-radius: 50%;
+    height: 6rem;
+    margin: 1rem 1rem 1rem 1rem;
+ }
+
+.post-follow-followers{
+    display: grid;
+    text-align: center;
+    justify-content: space-around;
+    grid-template-columns: 20% 28% 24.5%;
+}
+
+.favourites-names{
+    font-size: 2vh;
+}
+
+.post-follow-followers span{
+    color: gray;
+    font-size: 2.3vh;
+}
+
+.total-following,.total-followers,.total-posts{
+    margin: 1rem 0;
+    background-color: #ecf0f3;
+    border-radius: 0.5em;
+    box-shadow: 0.6em 0.6em 0.8em #cbced1, -0.3em -0.3em 0.5em #fff;
+    padding: 0.3rem 0.6rem;
+}
+
+.myposts{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    margin: 2rem 0.2rem;
+}
+
+.myposts .posts img{
+    max-width: 11.5rem;
+}
+
+.posts-head-design{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.posts-head-design img{
+    height: 3.5vh;
+}

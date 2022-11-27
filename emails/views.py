@@ -25,7 +25,7 @@ def otp_Gen(rec):
         msgs['To'] = you
         digits = [i for i in range(0, 10)]
         otp = ""
-        for i in range(4):
+        for i in range(6):
             index = math.floor(random.random() * 10)
             otp += str(digits[index])
         text = (f"Your OTP is : {otp}.\n Thank you for Registering Metagram")

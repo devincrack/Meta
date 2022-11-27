@@ -15,3 +15,4 @@ let post = document.getElementsByClassName("post-container");
 window.addEventListener("load",function () {
     loader.style.display="none"
 })
+

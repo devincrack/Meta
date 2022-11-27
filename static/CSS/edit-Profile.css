@@ -1,0 +1,49 @@
+*{
+    font-size: 1.5rem;
+}
+
+.head-box{
+    padding: 0.5rem 0;
+}
+
+.hr{
+    width: 100vw;
+}
+
+.main-head{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 0.1rem solid lightgray;
+    border-top: 0.1rem solid lightgray;
+    padding: 1rem 0;
+}
+.head-text{
+    text-align: center;
+    margin-left: -1rem;
+}
+
+p{
+    font-size: 1.9rem;
+}
+.go-back-img img{
+    margin-left: 0.5rem;
+    height: 1.5rem;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.profile .pic{
+    margin-left: 2rem;
+}
+.profile .pic img{
+    border-radius: 50%;
+    height: 5rem;
+}
+
+.alter a{
+    color: #1a75ff;
+    grid-
+}
