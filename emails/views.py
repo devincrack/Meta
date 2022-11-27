@@ -25,6 +25,7 @@ def otp_Gen(rec):
         msgs['To'] = you
         digits = [i for i in range(0, 10)]
         otp = ""
+
         for i in range(6):
             index = math.floor(random.random() * 10)
             otp += str(digits[index])
